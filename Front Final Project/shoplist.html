@@ -28,11 +28,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
         integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/SASS/shoplist.css">
+    <link rel="stylesheet" href="./assets/SASS/main.css">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="goUp">
+        <a href="#"><i class="fas fa-chevron-up"></i></a>
+    </div>
     <header>
         <div class="nav">
             <div class="container">
@@ -240,7 +243,12 @@
                             <p><i class="fas fa-shopping-bag icon"></i>CART($0)</p>
                         </div>
                     </div>
-
+                    <div class="searchArea">
+                        <div class="area">
+                            <input type="text" placeholder="Search">
+                            <i class="fas fa-search searchIcon"></i>
+                        </div>
+                    </div>
                     <div class="menuIcon col-sm-2 col-2">
                         <i class="fas fa-bars"></i>
                     </div>
@@ -328,236 +336,239 @@
             </div>
         </div>
     </header>
-    <section id="entrance">
-        <div class="container">
-            <div class="row">
-                <div class="desc">
-                    <h3>Shop List</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="relproducts">
-        <div class="container">
-            <div class="row">
-                <div class="products">
-                    <div class="prduct col-lg-3 col-md-4 col-sm-6">
-                        <div class="prdctimg">
-                            <a href="">
-                                <img src="./assets/images/shop-7-img.jpg" alt="">
-                            </a>
-
-                            <div class="buyFlow">
-                                <p class="name">SCHEFFLERA</p>
-                                <p class="price">$259</p>
-                                <button class="mybtn">VIEW CART</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="prduct col-lg-3 col-md-4 col-sm-6">
-                        <div class="prdctimg">
-                            <a href="">
-                                <img src="./assets/images/shop-8-img.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="buyFlow">
-                            <p class="name">ORANGE AMARYLS</p>
-                            <p class="price">$259</p>
-                            <button class="mybtn">ADD TO CART</button>
-                        </div>
-                    </div>
-                    <div class="prduct col-lg-3 col-md-4 col-sm-6">
-                        <div class="prdctimg">
-                            <a href="">
-                                <img src="./assets/images/shop-6-img.jpg" alt="">
-                            </a>
-
-                        </div>
-                        <div class="buyFlow">
-                            <p class="name">PINK FLOWER TREE</p>
-                            <p class="price">$259</p>
-                            <button class="mybtn">READ MORE</button>
-                        </div>
-                    </div>
-
-                    <div class="prduct col-lg-3 col-md-4 col-sm-6">
-                        <div class="prdctimg">
-                            <a href="">
-                                <img src="./assets/images/shop-10-img.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="buyFlow">
-                            <p class="name">CACTUS IN ORANGE</p>
-                            <p class="price">$259</p>
-                            <button class="mybtn">SELECT OPTIONS</button>
-                        </div>
+    <div id="shopListPage">
+        <section id="entrance">
+            <div class="container">
+                <div class="row">
+                    <div class="desc">
+                        <h3>Shop List</h3>
                     </div>
                 </div>
             </div>
-        </div>
-
-    </section>
-    <section id="flowerCarousel">
-        <div class="container">
-            <div class="row">
-                <h4 class="heading">FEATURED ITEMS</h4>
-                <div class="owl-carousel owl-theme">
-                    <div class="prduct">
-                        <div class="prdctimg">
-                            <figure>
+        </section>
+        <section id="relproducts">
+            <div class="container">
+                <div class="row">
+                    <div class="products">
+                        <div class="prduct col-lg-3 col-md-4 col-sm-6">
+                            <div class="prdctimg">
                                 <a href="">
                                     <img src="./assets/images/shop-7-img.jpg" alt="">
                                 </a>
-                            </figure>
-                        </div>
-                        <div class="flower-info">
-                            <h5 class="name">MAJESTY PALM</h5>
-                            <p class="price">$100</p>
-                        </div>
-                    </div>
 
-                    <div class="prduct">
-                        <div class="prdctimg">
-                            <figure>
+                                <div class="buyFlow">
+                                    <p class="name">SCHEFFLERA</p>
+                                    <p class="price">$259</p>
+                                    <button class="mybtn">VIEW CART</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prduct col-lg-3 col-md-4 col-sm-6">
+                            <div class="prdctimg">
                                 <a href="">
                                     <img src="./assets/images/shop-8-img.jpg" alt="">
                                 </a>
-                            </figure>
+                            </div>
+                            <div class="buyFlow">
+                                <p class="name">ORANGE AMARYLS</p>
+                                <p class="price">$259</p>
+                                <button class="mybtn">ADD TO CART</button>
+                            </div>
                         </div>
-                        <div class="flower-info">
-                            <h5 class="name">FOXGLOVE FLOWER</h5>
-                            <p class="price">$100</p>
-                        </div>
-                    </div>
-                    <div class="prduct">
-                        <div class="prdctimg">
-                            <figure>
+                        <div class="prduct col-lg-3 col-md-4 col-sm-6">
+                            <div class="prdctimg">
                                 <a href="">
                                     <img src="./assets/images/shop-6-img.jpg" alt="">
                                 </a>
-                            </figure>
+
+                            </div>
+                            <div class="buyFlow">
+                                <p class="name">PINK FLOWER TREE</p>
+                                <p class="price">$259</p>
+                                <button class="mybtn">READ MORE</button>
+                            </div>
                         </div>
-                        <div class="flower-info">
-                            <h5 class="name">SWEET ALYSSUM</h5>
-                            <p class="price">$100</p>
-                        </div>
-                    </div>
-                    <div class="prduct">
-                        <div class="prdctimg">
-                            <figure>
+
+                        <div class="prduct col-lg-3 col-md-4 col-sm-6">
+                            <div class="prdctimg">
                                 <a href="">
                                     <img src="./assets/images/shop-10-img.jpg" alt="">
                                 </a>
-
-                            </figure>
-                        </div>
-                        <div class="flower-info">
-                            <h5 class="name">SPRING SNOWFLAKE</h5>
-                            <p class="price">$100</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <section id="sixProduct">
-        <div class="container">
-            <div class="row">
-                <div class="products">
-                    <div class="prduct col-lg-2 col-md-4 col-sm-6">
-                        <div class="prdctimg">
-                            <figure>
-                                <a href="">
-                                    <img src="./assets/images/shop-category-img-1.jpg" alt="">
-                                </a>
-
-                            </figure>
-
-                        </div>
-                        <div class="flower-info">
-                            <h5 class="name">CACTUSES</h5>
-                            <p class="price">from $159</p>
-                        </div>
-                    </div>
-
-                    <div class="prduct col-lg-2 col-md-4 col-sm-6">
-                        <div class="prdctimg">
-                            <figure>
-                                <a href="">
-                                    <img src="./assets/images/shop-category-img-2.jpg" alt="">
-                                </a>
-
-                            </figure>
-                        </div>
-                        <div class="flower-info">
-                            <h5 class="name">VARIOUS</h5>
-                            <p class="price">from $159</p>
-                        </div>
-                    </div>
-                    <div class="prduct col-lg-2 col-md-4 col-sm-6">
-                        <div class="prdctimg">
-                            <figure>
-                                <a href="">
-                                    <img src="./assets/images/shop-category-img-3.jpg" alt="">
-                                </a>
-
-                            </figure>
-                        </div>
-                        <div class="flower-info">
-                            <h5 class="name">WINTER</h5>
-                            <p class="price">from $259</p>
-                        </div>
-                    </div>
-
-                    <div class="prduct col-lg-2 col-md-4 col-sm-6">
-                        <div class="prdctimg">
-                            <figure>
-                                <a href="">
-                                    <img src="./assets/images/shop-category-img-4.jpg" alt="">
-                                </a>
-
-                            </figure>
-                        </div>
-                        <div class="flower-info">
-                            <h5 class="name">POPULAR</h5>
-                            <p class="price">from $159</p>
-                        </div>
-                    </div>
-                    <div class="prduct col-lg-2 col-md-4 col-sm-6">
-                        <div class="prdctimg">
-                            <figure>
-                                <a href="">
-                                    <img src="./assets/images/shop-category-img-5.jpg" alt="">
-                                </a>
-
-                            </figure>
-                        </div>
-                        <div class="flower-info">
-                            <h5 class="name">EXOTIC</h5>
-                            <p class="price">from $259</p>
-                        </div>
-                    </div>
-                    <div class="prduct col-lg-2 col-md-4 col-sm-6">
-                        <div class="prdctimg">
-                            <figure>
-                                <a href="">
-                                    <img src="./assets/images/shop-category-img-6.jpg" alt="">
-                                </a>
-
-                            </figure>
-                        </div>
-                        <div class="flower-info">
-                            <h5 class="name">GREENS</h5>
-                            <p class="price">from $159</p>
+                            </div>
+                            <div class="buyFlow">
+                                <p class="name">CACTUS IN ORANGE</p>
+                                <p class="price">$259</p>
+                                <button class="mybtn">SELECT OPTIONS</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </section>
+        </section>
+        <section id="flowerCarousel">
+            <div class="container">
+                <div class="row">
+                    <h4 class="heading">FEATURED ITEMS</h4>
+                    <div class="owl-carousel owl-theme">
+                        <div class="prduct">
+                            <div class="prdctimg">
+                                <figure>
+                                    <a href="">
+                                        <img src="./assets/images/shop-7-img.jpg" alt="">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="flower-info">
+                                <h5 class="name">MAJESTY PALM</h5>
+                                <p class="price">$100</p>
+                            </div>
+                        </div>
+
+                        <div class="prduct">
+                            <div class="prdctimg">
+                                <figure>
+                                    <a href="">
+                                        <img src="./assets/images/shop-8-img.jpg" alt="">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="flower-info">
+                                <h5 class="name">FOXGLOVE FLOWER</h5>
+                                <p class="price">$100</p>
+                            </div>
+                        </div>
+                        <div class="prduct">
+                            <div class="prdctimg">
+                                <figure>
+                                    <a href="">
+                                        <img src="./assets/images/shop-6-img.jpg" alt="">
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="flower-info">
+                                <h5 class="name">SWEET ALYSSUM</h5>
+                                <p class="price">$100</p>
+                            </div>
+                        </div>
+                        <div class="prduct">
+                            <div class="prdctimg">
+                                <figure>
+                                    <a href="">
+                                        <img src="./assets/images/shop-10-img.jpg" alt="">
+                                    </a>
+
+                                </figure>
+                            </div>
+                            <div class="flower-info">
+                                <h5 class="name">SPRING SNOWFLAKE</h5>
+                                <p class="price">$100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="sixProduct">
+            <div class="container">
+                <div class="row">
+                    <div class="products">
+                        <div class="prduct col-lg-2 col-md-4 col-sm-6">
+                            <div class="prdctimg">
+                                <figure>
+                                    <a href="">
+                                        <img src="./assets/images/shop-category-img-1.jpg" alt="">
+                                    </a>
+
+                                </figure>
+
+                            </div>
+                            <div class="flower-info">
+                                <h5 class="name">CACTUSES</h5>
+                                <p class="price">from $159</p>
+                            </div>
+                        </div>
+
+                        <div class="prduct col-lg-2 col-md-4 col-sm-6">
+                            <div class="prdctimg">
+                                <figure>
+                                    <a href="">
+                                        <img src="./assets/images/shop-category-img-2.jpg" alt="">
+                                    </a>
+
+                                </figure>
+                            </div>
+                            <div class="flower-info">
+                                <h5 class="name">VARIOUS</h5>
+                                <p class="price">from $159</p>
+                            </div>
+                        </div>
+                        <div class="prduct col-lg-2 col-md-4 col-sm-6">
+                            <div class="prdctimg">
+                                <figure>
+                                    <a href="">
+                                        <img src="./assets/images/shop-category-img-3.jpg" alt="">
+                                    </a>
+
+                                </figure>
+                            </div>
+                            <div class="flower-info">
+                                <h5 class="name">WINTER</h5>
+                                <p class="price">from $259</p>
+                            </div>
+                        </div>
+
+                        <div class="prduct col-lg-2 col-md-4 col-sm-6">
+                            <div class="prdctimg">
+                                <figure>
+                                    <a href="">
+                                        <img src="./assets/images/shop-category-img-4.jpg" alt="">
+                                    </a>
+
+                                </figure>
+                            </div>
+                            <div class="flower-info">
+                                <h5 class="name">POPULAR</h5>
+                                <p class="price">from $159</p>
+                            </div>
+                        </div>
+                        <div class="prduct col-lg-2 col-md-4 col-sm-6">
+                            <div class="prdctimg">
+                                <figure>
+                                    <a href="">
+                                        <img src="./assets/images/shop-category-img-5.jpg" alt="">
+                                    </a>
+
+                                </figure>
+                            </div>
+                            <div class="flower-info">
+                                <h5 class="name">EXOTIC</h5>
+                                <p class="price">from $259</p>
+                            </div>
+                        </div>
+                        <div class="prduct col-lg-2 col-md-4 col-sm-6">
+                            <div class="prdctimg">
+                                <figure>
+                                    <a href="">
+                                        <img src="./assets/images/shop-category-img-6.jpg" alt="">
+                                    </a>
+
+                                </figure>
+                            </div>
+                            <div class="flower-info">
+                                <h5 class="name">GREENS</h5>
+                                <p class="price">from $159</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
     <footer>
         <div class="container">
             <div class="row">

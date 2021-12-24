@@ -25,7 +25,24 @@ $(document).ready(function () {
     $(this).find(".rightIcn").toggleClass("ndeg udeg");
     $(this).next(".sub").slideToggle(200);
   });
+  //To top
+  $(".goUp").hide();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {
+      $(".goUp").show(200);
+    } else {
+      $(".goUp").hide(100);
+    }
+  });
+  $(".goUp").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 50);
+    return false;
+  });
 
+  // Search Area
+  $("header .littleservices .search span").click(function () {
+    $("header .searchArea").slideToggle();
+  });
   //Categoriyaya gore uygunlasdirma
 
   let category = document.querySelectorAll(".tab1 .category");

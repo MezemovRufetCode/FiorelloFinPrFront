@@ -22,11 +22,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./assets/SASS/accordion.css">
+    <link rel="stylesheet" href="./assets/SASS/main.css">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="goUp">
+        <a href="#"><i class="fas fa-chevron-up"></i></a>
+    </div>
     <header>
         <div class="nav">
             <div class="container">
@@ -234,7 +237,12 @@
                             <p><i class="fas fa-shopping-bag icon"></i>CART($0)</p>
                         </div>
                     </div>
-
+                    <div class="searchArea">
+                        <div class="area">
+                            <input type="text" placeholder="Search">
+                            <i class="fas fa-search searchIcon"></i>
+                        </div>
+                    </div>
                     <div class="menuIcon col-sm-2 col-2">
                         <i class="fas fa-bars"></i>
                     </div>
@@ -322,220 +330,258 @@
             </div>
         </div>
     </header>
-    <section id="entrance">
-        <div class="container">
-            <div class="row">
-                <div class="desc">
-                    <h3>Accordions</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="accordion">
-        <div class="container">
-            <div class="row">
-                <div class="accordion">
-                    <div class="first col-lg-6 col-12">
-                        <div class="allRow">
-                            <div class="allrowFirst">
-                                <div class="heading creativeEl active">
-                                    <p><span><i class="fas fa-minus"></i></span> CREATIVE ELEMENTS</p>
-                                </div>
-                                <div class="content">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                                    Nulla
-                                    consequat massa quis.
-                                </div>
-                            </div>
-
-                            <div class="allrowFirst">
-                                <div class="heading attention">
-                                    <p><span><i class="fas fa-plus"></i></span>ATTENTION TO DETAIL</p>
-                                </div>
-                                <div class="content" style="display: none;">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                                    Nulla
-                                    consequat massa quis.
-                                </div>
-                            </div>
-
-                            <div class="allrowFirst">
-                                <div class="heading EIMPORT">
-                                    <p><span><i class="fas fa-plus"></i></span>EASY IMPORT</p>
-                                </div>
-                                <div class="content" style="display: none;">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                                    Nulla
-                                    consequat massa quis.
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="second col-lg-6 col-12">
-                        <div class="allRow">
-                            <div class="allrowSecond">
-                                <div class="heading creativeEl active">
-                                    <p><span><i class="fas fa-minus"></i></span>CREATIVE ELEMENTS</p>
-                                </div>
-                                <div class="content">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                                    Nulla
-                                    consequat massa quis.
-                                </div>
-                            </div>
-
-
-                            <div class="allrowSecond">
-                                <div class="heading attention">
-                                    <p><span><i class="fas fa-plus"></i></span>ATTENTION TO DETAIL</p>
-                                </div>
-                                <div class="content" style="display: none;">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                                    Nulla
-                                    consequat massa quis.
-                                </div>
-                            </div>
-
-
-                            <div class="allrowSecond">
-                                <div class="heading EIMPORT">
-                                    <p><span><i class="fas fa-plus"></i></span>EASY IMPORT</p>
-                                </div>
-                                <div class="content" style="display: none;">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                                    Nulla
-                                    consequat massa quis.
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordionSec">
-                    <div class="first col-lg-6 col-12">
-                        <div class="allRow">
-                            <div class="allrowThird">
-                                <div class="heading creativeEl active">
-                                    <p><span><i class="fas fa-minus"></i></span>CREATIVE ELEMENTS</p>
-                                </div>
-                                <div class="content">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                                    Nulla
-                                    consequat massa quis.
-                                </div>
-                            </div>
-
-
-                            <div class="allrowThird">
-                                <div class="heading attention">
-                                    <p><span><i class="fas fa-plus"></i></span>CREATIVE ELEMENTS</p>
-                                </div>
-                                <div class="content" style="display: none;">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                                    Nulla
-                                    consequat massa quis.
-                                </div>
-                            </div>
-
-
-                            <div class="allrowThird">
-                                <div class="heading EIMPORT">
-                                    <p><span><i class="fas fa-plus"></i></span>CREATIVE ELEMENTS</p>
-                                </div>
-                                <div class="content" style="display: none;">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                                    Nulla
-                                    consequat massa quis.
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="second col-lg-6">
-                        <div class="allRow">
-                            <div class="allrowFourth">
-                                <div class="heading creativeEl active">
-                                    <p><span><i class="fas fa-minus"></i></span>EASY IMPORT</p>
-                                </div>
-                                <div class="content">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                                    Nulla
-                                    consequat massa quis.
-                                </div>
-
-                            </div>
-
-                            <div class="allrowFourth">
-                                <div class="heading attention">
-                                    <p><span><i class="fas fa-plus"></i></span>EASY IMPORT</p>
-                                </div>
-                                <div class="content" style="display: none;">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                                    Nulla
-                                    consequat massa quis.
-                                </div>
-                            </div>
-
-
-                            <div class="allrowFourth">
-                                <div class="heading EIMPORT">
-                                    <p><span><i class="fas fa-plus"></i></span>EASY IMPORT</p>
-                                </div>
-                                <div class="content" style="display: none;">
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor.
-                                    Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-                                    Nulla
-                                    consequat massa quis.
-                                </div>
-                            </div>
-
-                        </div>
+    <div id="accordionPage">
+        <section id="entrance">
+            <div class="container">
+                <div class="row">
+                    <div class="desc">
+                        <h3>Accordions</h3>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="accordion">
+            <div class="container">
+                <div class="row">
+                    <div class="accordion">
+                        <div class="first col-lg-6 col-12">
+                            <div class="allRow">
+                                <div class="allrowFirst">
+                                    <div class="heading creativeEl active">
+                                        <p><span><i class="fas fa-minus"></i></span> CREATIVE ELEMENTS</p>
+                                    </div>
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                                        sem.
+                                        Nulla
+                                        consequat massa quis.
+                                    </div>
+                                </div>
+
+                                <div class="allrowFirst">
+                                    <div class="heading attention">
+                                        <p><span><i class="fas fa-plus"></i></span>ATTENTION TO DETAIL</p>
+                                    </div>
+                                    <div class="content" style="display: none;">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                                        sem.
+                                        Nulla
+                                        consequat massa quis.
+                                    </div>
+                                </div>
+
+                                <div class="allrowFirst">
+                                    <div class="heading EIMPORT">
+                                        <p><span><i class="fas fa-plus"></i></span>EASY IMPORT</p>
+                                    </div>
+                                    <div class="content" style="display: none;">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                                        sem.
+                                        Nulla
+                                        consequat massa quis.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="second col-lg-6 col-12">
+                            <div class="allRow">
+                                <div class="allrowSecond">
+                                    <div class="heading creativeEl active">
+                                        <p><span><i class="fas fa-minus"></i></span>CREATIVE ELEMENTS</p>
+                                    </div>
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                                        sem.
+                                        Nulla
+                                        consequat massa quis.
+                                    </div>
+                                </div>
+
+
+                                <div class="allrowSecond">
+                                    <div class="heading attention">
+                                        <p><span><i class="fas fa-plus"></i></span>ATTENTION TO DETAIL</p>
+                                    </div>
+                                    <div class="content" style="display: none;">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                                        sem.
+                                        Nulla
+                                        consequat massa quis.
+                                    </div>
+                                </div>
+
+
+                                <div class="allrowSecond">
+                                    <div class="heading EIMPORT">
+                                        <p><span><i class="fas fa-plus"></i></span>EASY IMPORT</p>
+                                    </div>
+                                    <div class="content" style="display: none;">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                                        sem.
+                                        Nulla
+                                        consequat massa quis.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordionSec">
+                        <div class="first col-lg-6 col-12">
+                            <div class="allRow">
+                                <div class="allrowThird">
+                                    <div class="heading creativeEl active">
+                                        <p><span><i class="fas fa-minus"></i></span>CREATIVE ELEMENTS</p>
+                                    </div>
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                                        sem.
+                                        Nulla
+                                        consequat massa quis.
+                                    </div>
+                                </div>
+
+
+                                <div class="allrowThird">
+                                    <div class="heading attention">
+                                        <p><span><i class="fas fa-plus"></i></span>CREATIVE ELEMENTS</p>
+                                    </div>
+                                    <div class="content" style="display: none;">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                                        sem.
+                                        Nulla
+                                        consequat massa quis.
+                                    </div>
+                                </div>
+
+
+                                <div class="allrowThird">
+                                    <div class="heading EIMPORT">
+                                        <p><span><i class="fas fa-plus"></i></span>CREATIVE ELEMENTS</p>
+                                    </div>
+                                    <div class="content" style="display: none;">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                                        sem.
+                                        Nulla
+                                        consequat massa quis.
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="second col-lg-6">
+                            <div class="allRow">
+                                <div class="allrowFourth">
+                                    <div class="heading creativeEl active">
+                                        <p><span><i class="fas fa-minus"></i></span>EASY IMPORT</p>
+                                    </div>
+                                    <div class="content">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                                        sem.
+                                        Nulla
+                                        consequat massa quis.
+                                    </div>
+
+                                </div>
+
+                                <div class="allrowFourth">
+                                    <div class="heading attention">
+                                        <p><span><i class="fas fa-plus"></i></span>EASY IMPORT</p>
+                                    </div>
+                                    <div class="content" style="display: none;">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                                        sem.
+                                        Nulla
+                                        consequat massa quis.
+                                    </div>
+                                </div>
+
+
+                                <div class="allrowFourth">
+                                    <div class="heading EIMPORT">
+                                        <p><span><i class="fas fa-plus"></i></span>EASY IMPORT</p>
+                                    </div>
+                                    <div class="content" style="display: none;">
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                                        eget
+                                        dolor.
+                                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                        nascetur
+                                        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                                        sem.
+                                        Nulla
+                                        consequat massa quis.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <footer>
         <div class="container">
             <div class="row">

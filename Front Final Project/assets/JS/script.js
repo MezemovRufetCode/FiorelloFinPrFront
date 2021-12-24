@@ -29,7 +29,7 @@ $(document).ready(function () {
   //To top
   $(".goUp").hide();
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 800) {
+    if ($(this).scrollTop() > 500) {
       $(".goUp").show(200);
     } else {
       $(".goUp").hide(100);
@@ -93,20 +93,11 @@ $(document).ready(function () {
   // });
   // Search Area
   $("header .littleservices .search span").click(function () {
-    $("header .searchArea").toggleClass("shide sshow");
+    $("header .searchArea").slideToggle();
   });
 
   //filterarea
-  let myfilter = document.querySelector(".products .filter");
-  myfilter.onmouseenter = function () {
-    let filterArea = document.querySelector(".products .filterArea");
-    filterArea.classList.remove("d-none");
-    filterArea.onmouseleave = function () {
-      filterArea.classList.add("d-none");
-    };
-  };
-  // myfilter.onmouseleave = function () {
-  //   let filterArea = document.querySelector(".products .filterArea");
-  //   filterArea.classList.add("d-none");
-  // };
+  $(".products .filter").click(function () {
+    $(".products .filterArea").slideToggle();
+  });
 });
